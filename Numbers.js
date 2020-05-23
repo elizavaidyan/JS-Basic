@@ -10,7 +10,7 @@ var total1 = num1 + n1; //string and number addition - result is a string
 console.log(total1);
 console.log(n2 + num2); //returns a string - string concatenation
 var num3 = "50";
-var result = "The result is" + num1 + num2; //string concatenation
+var result = "The result =" + num1 + num2; //string concatenation
 console.log(result);
 var result1 = num2 + num1 + "100"; //adds num1 & num2 and concatenates with 100, returns 30100
 console.log(result1);

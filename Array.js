@@ -116,7 +116,7 @@ var num2 = [45, 2, 6, 45,10];
 console.log(num2.lastIndexOf(45));//returns the position of the last occurrence of the specified element.; result is 3
 console.log(num1.lastIndexOf(16)); //same as Array.indexOf()
 console.log(num1.find(filterFunction));//returns the value of the first array element that passes a test function
-console.log(num1.findIndex(filterFunction));
+console.log(num1.findIndex(filterFunction)); //returns the index of the first array element that passes a test function.
 
 
 
