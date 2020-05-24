@@ -67,3 +67,4 @@ console.log(n1.MAX_VALUE); //cannot be used with vars; returns undefined
 
 
 
+
