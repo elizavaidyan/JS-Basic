@@ -36,3 +36,53 @@ console.log(Date.parse("Mar 21 2020"));//Date.parse() method to convert it to mi
 var msec = Date.parse("Mar 21 2020");
 var date1 = new Date(msec);
 console.log(date1);
+var date2 = new Date();
+console.log(date2.getTime());// getTime() method returns the number of milliseconds since January 1, 1970; result is 1590583363711
+console.log(date2.getFullYear());//getFullYear() method returns the year of a date as a four digit number; Result is 2020
+console.log(date2.getMonth()); //getMonth() method returns the month of a date as a number (0-11). Result is 4
+var months = ["Jan", "Feb", "Mar", "April", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
+console.log(months[date2.getMonth()]); //May
+console.log(date2.getDate());//getDate() method returns the day of a date as a number (1-31)
+console.log(date2.getHours());//getHours() method returns the hours of a date as a number (0-23)
+console.log(date2.getMinutes());//getMinutes() method returns the minutes of a date as a number (0-59)
+console.log(date2.getSeconds());//getSeconds() method returns the seconds of a date as a number (0-59)
+console.log(date2.getMilliseconds());//getMilliseconds() method returns the milliseconds of a date as a number (0-999)
+console.log(date2.getDay());//getDay() method returns the weekday of a date as a number (0-6)
+var days = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
+console.log(days[date2.getDay()]); 
+var date3 = new Date();
+date3.setFullYear(2020); //setFullYear() method sets the year of a date object
+//console.log(date3.setFullYear(2020)); returns milliseconds
+//date3.toString();
+console.log(date3); //2020-05-27T13:52:51.608Z
+date3.setFullYear(2020, 11, 3);//setFullYear() method can optionally set month and day
+console.log(date3); //2020-12-03T13:52:51.608Z
+date3.setMonth(3); //setMonth() method sets the month of a date object (0-11)
+console.log(date3); //2020-04-03T13:52:51.608Z
+date3.setDate(15); //setDate() method sets the day of a date object (1-31)
+console.log(date3); //2020-04-15T13:55:19.354Z
+date3.setDate(date3.getDate() + 50); //setDate() method can also be used to add days to a date
+console.log(date3);
+date3.setHours(30);//setHours() method sets the hours of a date object (0-23)
+console.log(date3);
+date3.setMinutes(30);//setMinutes() method sets the minutes of a date object (0-59)
+console.log(date3);
+date3.setSeconds(30);
+console.log(date3);
+//Compare Dates
+var today, someday, text;
+today = new Date();
+someday = new Date();
+someday.setFullYear(2100, 0, 14);//January is 0
+if (someday > today)
+{
+  text = "Today is before January 14, 2100";
+
+} else {
+  text = "Today is after January 14, 2100";
+}
+console.log(text);
+
+
+
+
