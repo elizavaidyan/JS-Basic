@@ -16,5 +16,5 @@ Angle in radians = Angle in degrees x PI / 180. */
 console.log(Math.cos(0 * Math. PI / 180)); // returns 1 (the cos of 0 degrees)
 console.log(Math.min(0, 150, 30, 20, -8, -200)); //Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments; Result is -200
 console.log(Math.max(0, 150, 30, 20, -8, -200)); //Result is 150
-console.log(Math.random());
+console.log(Math.random());//Math.random() returns a random number between 0 (inclusive), and 1 (exclusive)
 
