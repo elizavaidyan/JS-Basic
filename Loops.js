@@ -60,3 +60,26 @@ do {
   console.log(i);
   i++;
 } while (i < 30);
+//break
+for(i = 0; i < 10; i++){
+  if (i == 3){
+    break; //jump out of the loop
+  }
+  console.log(i);
+}
+//continue
+for (i = 0; i < 10; i++){
+  if (i == 3){
+    continue; //3 is not printed; to skip one loop iteration
+  }
+  console.log(i);
+}
+//JS Labels
+
+lists: {
+  console.log(cars[0]);
+  console.log(cars[1]);
+  break lists;
+  console.log(cars[2]);
+  console.log(cars[3]);
+}
