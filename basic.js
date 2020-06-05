@@ -1,19 +1,19 @@
 var value = 10;
 
 console.log(value); 
-console.log('All the best Elizabeth');
+console.log('All the best Anna');
 
 var x, y, z;
 x = 5; y = 10;
 z = x + y;
 console.log(z);
 
-var x = "Elizabeth"; //string in double quotes
+var x = "Anna"; //string in double quotes
 console.log(x);
-var y = 'Alexander'; //string in single quotes
+var y = 'Mary'; //string in single quotes
 console.log(x,y);  // prints the values in a single line
-var Lastname = "Alexander";
-var lastname = "Alex";
+var Lastname = "John";
+var lastname = "Johny";
 console.log(Lastname); //Identifiers
 console.log(lastname);
 var num = 1; //number data type
@@ -32,7 +32,7 @@ var num1 = 10, num2 = 20; //multiple variables in single line
 var num3 =30,
 num4 = 40;
 var num5; //value will be undefined after execution of this statement
-console.log(num5);
+console.log(num5); //undefined
 var num1; //redeclaring a variable,but still it holds the value 10
 console.log(num1); 
 var total = 1 + 2 + 3;
@@ -104,8 +104,8 @@ console.log(slash1);
 console.log(slash2);
 console.log(slash3);
 
-var name1 = "Elizabeth";
-var name2 = new String("Elizabeth"); //String as object 
+var name1 ="Ann";
+var name2 = new String("Ann"); //String as object 
 console.log(typeof name1); //It returns string
 console.log(typeof name2); //It returns object
 console.log(name1==name2); //It returns true. It checks value of name1 & name2

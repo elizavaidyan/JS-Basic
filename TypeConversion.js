@@ -49,4 +49,4 @@ console.log(5 + null); //5;because null is converted to 0
 console.log("5" + null); //5null
 console.log("5" + 2); //52
 console.log("5" - 2); //3;because "5" is converted to 5
-console.log("5" * 2);
+console.log("5" * 2); //10
