@@ -15,7 +15,7 @@ console.log(str.search("locate")); //search method
 var str1 = "Apple, Banana, Kiwi";
 var res = str1.slice(7, 13); //extracts a part of a string
 console.log(res);
-console.log(str1.slice(7,14));
+console.log(str1.slice(7,14));//index starts at 0
 console.log(str1.slice(-16, -6)); //starting from the end
 console.log(str1.slice(7));
 console.log(str1.slice(-7)); //counting from the end
@@ -58,15 +58,15 @@ text1[0]="A"; //does not show error,but does not work
 console.log(text1[0]);
 var text4 = "a, b, c, d,e";
 var splitText = text4.split(",");  //converts to an array
-console.log(text4);
-console.log(splitText);
+console.log(text4); //a, b, c, d,e
+console.log(splitText); //[ 'a', ' b', ' c', ' d', 'e' ]
 console.log(text4[0]);
 console.log(splitText[0]);
 var text5 = "a, b, c";
-var splitText1 = text4.split(" ");
+var splitText1 = text4.split(" "); //[ 'a,', 'b,', 'c,', 'd,e' ]
 console.log(splitText1);
-console.log(text5.split(" "));
-console.log(text5.split("|"));
+console.log(text5.split(" ")); //[ 'a,', 'b,', 'c' ]
+console.log(text5.split("|")); //[ 'a, b, c' ]
 console.log(text5.split(""));
 
 

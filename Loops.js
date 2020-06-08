@@ -9,7 +9,7 @@ var cars = ["BMW", "Volvo", "Saab", "Ford"];
 for (i =0, len =cars.length, text = ""; i < len; i++) { 
   text += cars[i];
 }
-console.log(text +'\n');
+console.log(text);
 i = 2;
 len = cars.length;
 text = "";
