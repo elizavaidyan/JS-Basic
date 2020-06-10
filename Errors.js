@@ -63,5 +63,5 @@ try {
   decodeURI("%%%"); // You cannot URI decode percent signs
 }
 catch(err){
-  console.log(err.name);
+  console.log(err.name); //URIError
 }
