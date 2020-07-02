@@ -31,6 +31,7 @@ var carName1 = 'Prado'; //Assigning value to a variable when declare it
 var num1 = 10, num2 = 20; //multiple variables in single line
 var num3 =30,
 num4 = 40;
+console.log(num4);
 var num5; //value will be undefined after execution of this statement
 console.log(num5); //undefined
 var num1; //redeclaring a variable,but still it holds the value 10
