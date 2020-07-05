@@ -35,7 +35,7 @@ function carFunction1(n1, n2){
   console.log(n2, n1);
 }
 cars.forEach(carFunction1);
-cars.push("Benz"); //push()method adds element to array
+cars.push("Benz"); //push()method adds element to array at the end
 console.log(cars);
 cars[cars.length] = "Hyundai"; //Adding elements to array by length property
 console.log(cars); //[ 'Opel', 'Volvo', 'BMW', 'Benz', 'Hyundai' ]
@@ -117,6 +117,59 @@ console.log(num2.lastIndexOf(45));//returns the position of the last occurrence 
 console.log(num1.lastIndexOf(16)); //same as Array.indexOf()
 console.log(num1.find(filterFunction));//returns the value of the first array element that passes a test function
 console.log(num1.findIndex(filterFunction)); //returns the index of the first array element that passes a test function.
-
+var myArray = [["John", 23], ["Cat", 2]];
+myArray.push(["dog", 3]);
+console.log(myArray);//[ [ 'John', 23 ], [ 'Cat', 2 ], [ 'dog', 3 ] ]
+function functionwithArgs(arg1,arg2) {
+  console.log(arg1+arg2);
+}
+functionwithArgs(2,3); //5
+function myTest() {
+  var loc = "foo";
+  console.log(loc);
+}
+myTest(); // logs "foo"
+//console.log(loc); // loc is not defined
+var myGlobal = 10;
+function fun1() {
+  oopsGlobal = 5;//Variables which are used without the var keyword are automatically created in the global scope. 
+}
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+/*fun1();
+fun2(); */
+fun2();
+fun1();
+//It is possible to have both local and global variables with the same name. When you do this, the local variable takes precedence over the global variable.
+var outerWear = "T-Shirt";
+function myOutfit() {
+  var outerWear = "sweater";
+  return outerWear;
+}
+console.log(myOutfit());//sweater
+var sum = 0;
+function addThree() {
+  sum = sum + 3;
+}
+function addFive() {
+  sum = sum +5;
+}
+addThree();
+addFive();
+console.log(sum); //8
+var processed = 0;
+function processArg(num) {
+  return (num + 3) / 5;
+}
+processed = processArg(7);
+console.log(processed);
 
 

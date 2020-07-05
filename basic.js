@@ -31,7 +31,7 @@ var carName1 = 'Prado'; //Assigning value to a variable when declare it
 var num1 = 10, num2 = 20; //multiple variables in single line
 var num3 =30,
 num4 = 40;
-console.log(num4);
+console.log(num4);//40
 var num5; //value will be undefined after execution of this statement
 console.log(num5); //undefined
 var num1; //redeclaring a variable,but still it holds the value 10
@@ -115,5 +115,10 @@ var str = "Please locate where 'locate' occurs!";
 console.log(str.indexOf("locate")); //The position of first occurence of locate
 console.log(str.lastIndexOf("locate")); //Last occurence of locate
 console.log(str.indexOf("locate", 15)); // 15 is the starting position for the search
-
+//in-line comment
+/* multi-line comment */
+//When JavaScript variables are declared, they have an initial value of undefined.
+/* If you do a mathematical operation on an undefined variable your result will be NaN which means "Not a Number". If you concatenate a string with an undefined variable, you will get a literal string of "undefined". */
+var goodStr = 'Jane asks finn, "Hey, let\'s go on an adventure?"';
+//var badStr = 'Finn responds , "Let's go!"'; //throws an error
 
